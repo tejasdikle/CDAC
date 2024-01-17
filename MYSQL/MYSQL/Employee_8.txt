@@ -1,0 +1,146 @@
+Q1. IMPORT THE TEST.SQL FILE AND SOLVE THE FOLLOWING QUERIES [40 MARKS]
+
+
+
+1. WRITE A QUERY TO FIND THE NAME (FIRST_NAME, LAST_NAME) AND HIRE DATE OF THE
+EMPLOYEES WHO WAS HIRED AFTER 'ISMAEL'.
+
+==>
+SELECT FIRST_NAME, LAST_NAME, HIRE_DATE
+FROM Employees
+WHERE HIRE_DATE > (
+    SELECT HIRE_DATE
+    FROM Employees
+    WHERE FIRST_NAME = 'Ismael'
+);
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.  WRITE A QUERY TO FIND THE EMPLOYEE ID, JOB TITLE, NUMBER OF DAYS BETWEEN ENDING DATE
+AND STARTING DATE FOR ALL JOBS IN DEPARTMENT 90 FROM JOB HISTORY.
+
+==>
+
+SELECT EMPLOYEE_ID, JOB_TITLE, DATEDIFF(END_DATE, START_DATE) AS DAYS_BETWEEN
+FROM JOB_HISTORY
+WHERE DEPARTMENT_ID = 90;
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. WRITE A QUERY TO DISPLAY JOB TITLE, EMPLOYEE NAME, AND THE DIFFERENCE BETWEEN
+SALARY OF THE EMPLOYEE AND MINIMUM SALARY FOR THE JOB.
+
+==>
+
+SELECT J.JOB_TITLE, CONCAT(E.FIRST_NAME, ' ', E.LAST_NAME) AS EMPLOYEE_NAME,
+       (E.SALARY - J.MIN_SALARY) AS SALARY_DIFFERENCE
+FROM EMPLOYEES E
+JOIN JOBS J ON E.JOB_ID = J.JOB_ID;
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. WRITE A QUERY TO DISPLAY DEPARTMENT NAME, NAME (FIRST_NAME, LAST_NAME), HIRE DATE,
+SALARY OF THE MANAGER FOR ALL MANAGERS WHOSE EXPERIENCE IS MORE THAN 15 YEARS
+
+==>
+
+SELECT 
+    D.DEPARTMENT_NAME, 
+    CONCAT(E.FIRST_NAME, ' ', E.LAST_NAME) AS MANAGER_NAME,
+    E.HIRE_DATE,
+    E.SALARY
+FROM 
+    EMPLOYEES E
+JOIN 
+    DEPARTMENTS D ON E.DEPARTMENT_ID = D.DEPARTMENT_ID
+WHERE 
+    E.EMPLOYEE_ID IN (
+        SELECT 
+            MANAGER_ID 
+        FROM 
+            EMPLOYEES 
+        WHERE 
+            JOB_ID LIKE 'MAN%' AND 
+            DATEDIFF(CURDATE(), HIRE_DATE) > 5475 /* 15 years in days */
+    );
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. WRITE A STORE FUNCTION TO FIND THE TYPE OF CARD TO BE ALLOCATED TO THE EMPLOYEE
+BASED ON THE SALARY :-
+• Salary between 1000 - 10000 (Silver Card With 50000 Limit)
+• Salary between 10000 - 20000 (Gold Card With 150000 Limit)
+• Salary greater then 20000 (Platinum Card with 300000 Limit)
+
+==>
+
+DELIMITER //
+
+CREATE FUNCTION DetermineCardType(salary DECIMAL(10,2))
+RETURNS VARCHAR(50)
+BEGIN
+    DECLARE cardType VARCHAR(50);
+
+    IF salary BETWEEN 1000 AND 10000 THEN
+        SET cardType = 'Silver Card With 50000 Limit';
+    ELSEIF salary BETWEEN 10001 AND 20000 THEN
+        SET cardType = 'Gold Card With 150000 Limit';
+    ELSE
+        SET cardType = 'Platinum Card with 300000 Limit';
+    END IF;
+
+    RETURN cardType;
+END //
+
+DELIMITER ;
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. WRITE A QUERY TO GET THE YEARS IN WHICH MORE THAN 10 EMPLOYEES JOINED.
+
+==>
+
+SELECT YEAR(HIRE_DATE) AS JOIN_YEAR, COUNT(*) AS NUM_JOINED
+FROM Employees
+GROUP BY JOIN_YEAR
+HAVING NUM_JOINED > 10;
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. WRITE A QUERY TO DISPLAY THE FIRST WORD FROM THOSE JOB TITLES WHICH CONTAINS MORE
+THAN ONE WORDS.
+
+==>
+
+SELECT 
+    CASE 
+        WHEN INSTR(JOB_TITLE, ' ') > 0 THEN SUBSTRING_INDEX(JOB_TITLE, ' ', 1)
+        ELSE JOB_TITLE
+    END AS FIRST_WORD
+FROM 
+    YourTableName
+WHERE 
+    INSTR(JOB_TITLE, ' ') > 0;
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8. WRITE A QUERY TO DISPLAY THE FIRST EIGHT CHARACTERS OF THE EMPLOYEES' FIRST NAMES
+AND INDICATES THE AMOUNTS OF THEIR SALARIES WITH '$' SIGN. EACH '$' SIGN SIGNIFIES A
+THOUSAND DOLLARS. SORT THE DATA IN DESCENDING ORDER OF SALARY. 
+
+==>
+
+SELECT 
+    LEFT(FIRST_NAME, 8) AS SHORT_FIRST_NAME,
+    CONCAT('$', FORMAT(SALARY, 0)) AS FORMATTED_SALARY
+FROM 
+    Employees
+ORDER BY 
+    SALARY DESC;
+
+
+

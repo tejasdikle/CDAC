@@ -1,0 +1,110 @@
+
+CREATE TABLE STUDENT (
+    STUDENT_NO VARCHAR(10) PRIMARY KEY,
+    FORENAME VARCHAR(50),
+    SURNAME VARCHAR(50)
+);
+
+
+INSERT INTO STUDENT (STUDENT_NO, FORENAME, SURNAME) VALUES
+    ('1', 'John', 'Doe'),
+    ('2', 'Jane', 'Smith'),
+    ('3', 'Emile', 'Zola'),
+    ('4', 'Alice', 'Johnson'),
+    ('5', 'Bob', 'Williams');
+
+
+CREATE TABLE MARKS (
+    STUDENT_NO VARCHAR(10),
+    MODULE_NAME VARCHAR(50),
+    MARK INT,
+    FOREIGN KEY (STUDENT_NO) REFERENCES STUDENT(STUDENT_NO)
+);
+
+
+INSERT INTO MARKS (STUDENT_NO, MODULE_NAME, MARK) VALUES
+    ('1', 'DATABASES', 85),
+    ('2', 'DATABASES', 75),
+    ('3', 'DATABASES', 90),
+    ('4', 'DATABASES', 78),
+    ('5', 'DATABASES', 60);
+
+select * from student;
+select * from mark;
+
+SELECT STUDENT_NO, SUM(MARK) AS TOTAL_MARKS
+FROM MARKS
+GROUP BY STUDENT_NO
+HAVING TOTAL_MARKS > 60;
+
+SELECT 
+    CONCAT(S.FORENAME, ' ', S.SURNAME) AS STUDENT_NAME,
+    M.MODULE_NAME,
+    M.MARK
+FROM 
+    MARKS M
+JOIN STUDENT S ON M.STUDENT_NO = S.STUDENT_NO
+WHERE 
+    M.MODULE_NAME = 'DATABASES'
+    AND M.MARK > (SELECT MARK FROM MARKS WHERE STUDENT_NO = '3' AND MODULE_NAME = 'DATABASES');
+
+
+ALTER TABLE MARKS
+ADD CONSTRAINT FK_STUDENT_NO
+FOREIGN KEY (STUDENT_NO) 
+REFERENCES STUDENT(STUDENT_NO);
+
+
+
+DELIMITER 
+CREATE FUNCTION GetGrade(MARK INT) RETURNS VARCHAR(1)
+BEGIN
+    DECLARE GRADE VARCHAR(1);
+
+    IF MARK >= 80 THEN
+        SET GRADE = 'A';
+    ELSEIF MARK BETWEEN 65 AND 79 THEN
+        SET GRADE = 'B';
+    ELSEIF MARK BETWEEN 50 AND 64 THEN
+        SET GRADE = 'C';
+    ELSE
+        SET GRADE = 'FAIL';
+    END IF;
+
+    RETURN GRADE;
+END 
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE ShowTablesStartingWithM()
+BEGIN
+    DECLARE done INT DEFAULT FALSE;
+    DECLARE table_name VARCHAR(255);
+
+    -- Cursor to fetch table names
+    DECLARE cur CURSOR FOR
+        SELECT table_name
+        FROM information_schema.tables
+        WHERE table_name LIKE 'M%';
+
+    -- Handler for no more rows
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+
+    -- Open cursor
+    OPEN cur;
+
+    -- Loop to fetch and display table names
+    read_loop: LOOP
+        FETCH cur INTO table_name;
+        IF done THEN
+            LEAVE read_loop;
+        END IF;
+
+        -- Display the table name
+        SELECT table_name AS Table_Name;
+    END LOOP;
+
+    -- Close cursor
+    CLOSE cur;
+END //
+DELIMITER ;

@@ -1,0 +1,54 @@
+For MVC project 
+FIRST SELECT 7.0 VERSION(API) ONLY CHOOSE API FRAMEWORK
+STEP 1:(INSTALLATION PACKAGES)
+----------------------------------------------------------------------
+1Microsoft.EntityFrameworkCore.SqlServer
+2.Microsoft.EntityFrameworkCore
+3.Microsoft.EntityFrameworkCore.Tool
+(Tools  =>Nuget packege => Manage nuget packege)
+
+STEP 2:
+----------------------------------------------------------------------
+Generated DataBase NAME =(BOOKDB)
+ADD TABLE AS PER REQUIREMENT)
+Add indentity for auto increment
+
+STEP 3:
+----------------------------------------------------------------------
+GO TO TOOLS OPTION 
+GO NUGET MANAGER 
+CLICK  PACKAGE MANAGER CONSOLE							(CHANGE DB HERE)
+ PASTE THIS :- Scaffold-DbContext "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BookDB2;Integrated Security=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+----------------------------------------------------------------------
+STEP 4
+----------------------------------------------------------------------
+ Specify connection string in appsettings.jsoN
+
+"ConnectionStrings": 
+{
+    "BookDB2Context": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BookDB2;Integrated Security=true;MultipleActiveResultSets=true"
+  }
+
+
+STEP 5 :
+----------------------------------------------------------------------
+
+Add EF service in Program.cs
+
+        public static void Main(string[] args)
+        {
+            builder.Services.AddControllersWithViews();
+				(PUT ONTEXTNAME HERE)
+            builder.Services.AddDbContext<Yash1Context>(options =>
+                        options.UseSqlServer(builder.Configuration.GetConnectionString("Yash1Context")));
+
+        }
+Step 6:
+----------------------------------------------------------------------
+Build project
+and run
+ Add Controller select =>Entity framwork (last)
+
+STEP 7:
+----------------------------------------------------------------------
+ADD Controller Name in programm.cs at last

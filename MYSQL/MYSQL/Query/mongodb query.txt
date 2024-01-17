@@ -1,0 +1,88 @@
+1}use cdac
+2} db.createCollection("mycol")
+3} show collections
+4} db.mycol.insert({title:'MonogoDB Overview',description:'MongoDB is no SQL database',by:'tutorials point',url: "http://www.tutorialspoint.com",tags: ["mongodb", "database", "NoSQL"],likes: 100})
+5} db.mycol.insert({title: "NoSQL Database", description: "NoSQL database doesn't have tables", by: "tutorials point", url: "http://www.tutorialspoint.com", tags: ["mongodb", "database", "NoSQL"],likes: 20, comments: [{ user:"user1", message: "My first comment", dateCreated: new Date(2013,11,10,2,35), like: 0 }]})
+6} db.mycol.find();
+7} db.mycol.findOne({likes:{$gt:10}});
+8} db.mycol.find({'comments.user':'user1'})
+
+================
+MYSQL
+=================
+DELIMITER //
+
+CREATE PROCEDURE GetTotalSalaryByDepartment(IN workerID INT)
+BEGIN
+    SELECT
+        department,
+        SUM(salary) AS total_salary
+    FROM
+        yourTableName
+    WHERE
+        worker_id = workerID
+    GROUP BY
+        department;
+END //
+
+DELIMITER ;
+
+
+2}
+DELIMITER //
+
+CREATE PROCEDURE GetWorkerNamesList()
+BEGIN
+    DECLARE done INT DEFAULT FALSE;
+    DECLARE workerName VARCHAR(255);
+    DECLARE workerList VARCHAR(1000) DEFAULT '';
+
+    -- Declare a cursor to fetch worker names
+    DECLARE workerCursor CURSOR FOR
+        SELECT worker_name FROM yourTableName;
+
+    -- Declare continue handler to exit the loop
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+
+    -- Open the cursor
+    OPEN workerCursor;
+
+    -- Loop through the cursor and concatenate worker names
+    workerLoop: LOOP
+        FETCH workerCursor INTO workerName;
+
+        IF done THEN
+            LEAVE workerLoop;
+        END IF;
+
+        -- Concatenate worker names with a comma
+        SET workerList = CONCAT(workerList, workerName, ', ');
+    END LOOP;
+
+    -- Remove the trailing comma and space
+    SET workerList = SUBSTRING(workerList, 1, LENGTH(workerList) - 2);
+
+    -- Close the cursor
+    CLOSE workerCursor;
+
+    -- Return the comma-separated list of worker names
+    SELECT workerList AS worker_names;
+END //
+
+DELIMITER ;
+
+===============
+3}
+DELIMITER //
+
+CREATE TRIGGER emp_details_after_insert
+AFTER INSERT ON EMP_DETAILS
+FOR EACH ROW
+BEGIN
+    INSERT INTO EMP_LOG_DETAILS (first_name, last_name, salary)
+    VALUES (NEW.first_name, NEW.last_name, NEW.salary);
+END;
+
+//
+
+DELIMITER ;

@@ -1,0 +1,24 @@
+create database booksstore;
+use booksstore;
+create table books(id int AUTO_INCREMENT PRIMARY KEY,book varchar(60),author varchar(60),price float);
+desc books;
+
+INSERT INTO books VALUES
+    (default, 'The Great Gatsby', 'F. Scott Fitzgerald', 1599),
+    (default, 'To Kill a Mockingbird', 'Harper Lee', 1250),
+    (default, '1984', 'George Orwell', 1099),
+    (default, 'The Catcher in the Rye', 'J.D. Salinger', 1425),
+    (default, 'Pride and Prejudice', 'Jane Austen', 975),
+    (default, 'The Hobbit', 'J.R.R. Tolkien', 1850),
+    (default, 'The Da Vinci Code', 'Dan Brown', 1699),
+    (default, 'Harry Potter and the Sorcerer''s Stone', 'J.K. Rowling', 2200),
+    (default, 'The Shining', 'Stephen King', 1375),
+    (default, 'The Alchemist', 'Paulo Coelho', 1120);
+use booksstore;
+
+select * from books;
+
+
+
+
+

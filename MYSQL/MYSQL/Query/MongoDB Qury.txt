@@ -1,0 +1,14 @@
+1.PS C:\Users\Tejas Dhikale> mongosh
+2.test> use Student
+3.Student> db.createCollection("std_tbl")
+4.Student> db.std_tbl.insertMany([{id:1,name:"Vishu",class:"BTech"},{id:2,name:"tejas",class:"Diploma"}])
+5.Student> db.std_tbl.find()
+6.Student> db.std_tbl.update({id:1},{$set:{name:"rahul"}})
+7.Student> db.std_tbl.find()
+8.Student> db.std_tbl.insertMany([{id:1,name:"Vishu",class:"BTech"},{id:2,name:"Pathan",class:"Degree"},{id:3,name:"Vignesh",class:"BE"},{id:4,name:"Gaurav",class:"PG-Dac"}])
+9.Student> db.std_tbl.find()
+10.Student> db.std_tbl.updateMany({name:"tejas"},{$set:{name:"Kaka"}})
+11.Student> db.std_tbl.remove({name:'Lalit'})
+12.Student> db.std_tbl.find({},{name:'Nana'})
+13.Student> db.std_tbl.find({},{name:'aarti'})
+14.Student> db.std_tbl.find({},{name:2,_id:1})
