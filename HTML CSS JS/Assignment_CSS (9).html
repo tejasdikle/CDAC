@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label
+        {
+            color: blue;
+            font-size: 15px;
+            font-family:Arial Rounded MT;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label style='color:blue;font-family:Arial Rounded MT;font-size:15px'>Select valid Date..!!</label> <br/>
+        <input type="date" name="dt"/> <br/>
+        <input type='submit' value="NextPage"/>
+        <input type='reset' value="Cancel"/><br>
+        <label style="color: blue; font-size: 15px;font-family: Arial Rounded MT;">Select valid Date <b style="color: red;">*</b></label><br>
+        <input type="datetime-local" name="dt" >
+        <input type="submit" value="NextPage">
+        <input type="reset" value="Cancel"><BR></BR>
+        <label style='color:blue;font-family:Arial Rounded MT;font-size:15px'>Select Valid TIME..!!</label> <br/>
+        <input type="time" name="tm"/> <br/>
+        <input type='submit' value="NextPage"/>
+        <input type='reset' value="Cancel"/><br><br>
+        <label>Select number</label><br>
+        <input type="number" min="0" high="2" max="100" step="2" name="num">
+        <input type="submit" value="NextPage">
+    </form>
+</body>
+</html>

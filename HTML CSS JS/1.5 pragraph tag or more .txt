@@ -1,0 +1,229 @@
+Paragraph tag:
+It is used to divide the text into different paragraphs. It is a paired tag.
+
+Syntax: <p>-------------</p>
+
+Attributes		Parameters
+align			left, right, center, justify
+
+Example
+<html>
+<head>
+<title>
+Paragraph tag
+</title>
+</head>
+<body>
+<p align="center">Welcome to the World </p>
+<p align="left">Welcome to the World </p>
+<p align="right">Welcome to the World </p>
+<p align="justify">Some text...</p>
+</body>
+</html>
+
+<br> tag
+br stands for break. It is used to break a line and shift the following text to a new line. It is a non-paired tag.
+
+Syntax:	
+<br>
+
+Example:
+<html>
+<title>
+Welcome to HTML
+</title>
+<body>
+To break<br />lines<br />in a<br />paragraph,<br />use the br element.
+</body>
+</html>
+
+&nbsp;
+It stands for Non-Breaking Space. It is used to add more than one space between the words. It is a special Characters or entity
+
+Syntax: 
+&nbsp;
+
+Example:
+<!doctype html>
+<html>
+<title>
+Special Character
+</title>
+<body>
+This is example using special &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp codes<br>
+a &lt b <br/>
+&copy &trade;&amp;&142
+</body>
+</html>
+
+HR tag: (Horizontal Rule)
+hr tag is used to draw a line across the web page. It is non-paired tag.
+
+Syntax: <hr> or <hr/>
+
+Attributes 	Parameters
+color		ColorName/HexaColorCode
+size		pix
+width		% or pix	
+align		left, right, center
+noshade	noshade
+
+Example
+<html>
+<title>
+hr tag
+</title>
+<head>
+<b><h1 align="center">I am Learning Web Language HTML</b></h1>
+</head>
+<body>
+<p>Welcome to the World.</p>
+<hr  size="4pix" width=20% align="right" noshade="noshade">
+<p>Leader in IT Training.</p>
+<hr>
+<p>Nahsik.</p>
+</body>
+</html>
+
+Example9
+<html>
+<Title>
+Welcome to the World
+</Title>
+<Head>
+<b><h1 align="center">I am Learning Web Language HTML</b></h1>
+</Head>
+<body>
+<p>Welcome to the World.</p>
+<hr  color="pink" size=18pix width=20% align="right">
+<p>Welcome to the World.</p>
+<hr size=28pix color="red">
+<p>Nashik.</p>
+</body>
+</html>
+
+HTML Presentational Tags:
+1 <acronym> 	2 <address> 	
+3 <b> 		4 <big> 		
+5 <blockquote> *	6 <center> 		
+7 <cite> 		8 <code>*	
+9 <del> 		10 <dfn> 		
+11 <em> 		12 <font> 		
+13 <i> 		14 <ins> 		
+15 <kbd>*		16 <pre>*	
+17 <q> 		18 <s> 		
+19 <samp> 	20 <small> 		
+21 <strike> 	22 <strong> 		
+23 <sub> 	* 	24 <sup>	*	
+25 <tt> 		26 <u> 		
+27 <var> 		
+
+HTML <acronym> Tag.
+It defines a full form or stands for. An acronym must spell out another word. It is a paired tag.  Not Supported in HTML5.
+
+Syntax:
+<acronym>................................... </acronym> 
+
+Example:
+<html>
+<body>
+Hello Welcome to<acronym title="Welcome to the World"> NiT </acronym> <br/>
+</body>
+</html>
+
+<address> Tag:
+It tag is used for indicating an address. The address usually renders in italic format. It is a paired tag.
+
+Syntax:
+<address>...................</address>
+
+Example:
+<!DOCTYPE html>
+   <body>
+      <address>
+         Welcome to the World,<br />
+         Nashik<br />
+         TELANGANA - 50027
+      </address>
+   </body>
+
+<b> Tag
+It is bold tag. It convert the text or characters in to bold format. It is a paired tag.
+
+Syntax:
+<b>--------------</b>
+
+<strong>
+It is aslo bold tag. It convert the text or characters in to bold format. It is a paired tag.
+
+Syntax:
+<strong>---------------</strong>
+
+Example:
+<html>
+<head>
+<title>
+MyBoldTag
+</title>
+</head>
+<body>
+<b>Welcome to Bold Font formated ..</b>
+<br>
+<bold>Welcome to Bold Font formated</bold>
+</body>
+</html>
+
+<big>
+It is used to display the big font size text. It is a paired tag.
+
+Syntax:
+<big>-----------</big>
+
+Example:
+<html>
+<head>
+<title>
+Small&Big
+</title>
+</head>
+<body>
+<small>Hello How are u..!</small>
+<br/>
+<big>Hello How are u..@@</big>
+</body>
+</html>
+
+<blockquote>
+It specifies a section that is quoted from another source. Browsers usually indent <blockquote> elements. It is a paired tag.
+
+Syntax:
+<blockquote>-----------</blockquote>
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+<blockquote>
+AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. Angular's data binding and dependency injection eliminate much of the code you would otherwise have to write.
+</blockquote>
+</body>
+</html>
+
+<center>
+It is used to display the text at the page center. It is a paired tag.
+
+Syntax:
+<center>---------</center>
+
+Example
+<html>
+<head>
+<title>
+Center Tag
+</title>
+</head>
+<body>
+<center>Text Page Center..!!</center>
+</body>
+</html>
+<html>

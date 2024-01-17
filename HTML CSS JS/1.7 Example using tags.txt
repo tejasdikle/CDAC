@@ -1,0 +1,255 @@
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <b>
+        Naresh i Technologies,<br />
+        INDIA.
+    </b>
+    <p></p>
+    <cite>Hello it is the text in Italics Format...!!</cite>
+   <br>
+   <cite>Hello it is using for Image titles...!!</cite>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <b>
+        Naresh i Technologies,<br />
+        INDIA.
+    </b>
+    <p></p>
+    <code>Hello it is the text in Code Format...!!</cite>
+   <br>
+   <cite>It is looking line programming !!</cite>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <b>
+        Naresh i Technologies,<br />
+        INDIA.
+    </b>
+    <p></p>
+    <del>It is Removed content from a web page...!!</del>
+   <br>
+   <s>It is looking line programming source code...!!</s>
+   <br>
+   <strike>It is looking line programming source code...!!</strike>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <dfn>
+        Naresh i Technologies,<br />
+        HYBDERABAD.
+    </dfn>
+    <p></p>
+    <dfn>HTML</dfn> It is static markup language for web page design..!!   
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <p>
+        Naresh i Technologies,<br />
+        HYBDERABAD.
+    </p>
+    <p></p>
+    <em>It is static markup language for web page design..!!</em>
+    <p></p>
+    <i>It is static markup language for web page design..!!</i>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <ins>
+        Naresh i Technologies,<br />
+        HYBDERABAD.
+    </ins>
+    <p></p>
+    <em>It is static markup language for web page design..!!</em>
+    <p></p>
+    <i>It is static markup language for web page design..!!</i>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <font color="red" size="6" face="candara">Hello Welcome to Font tag....!!</font>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    Save the Page <kbd>Ctrl+S</kbd> <br>
+    Save As the Page <kbd>Ctrl+Shift+S</kbd> <br>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <pre>
+    Hello          Welcome 
+    to HTML         Coding
+    
+    ...!!
+</pre>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <q>Hello Welcome to HTML Coding...!!</q>
+</pre>
+</body>
+</html>
+
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <small>It is small Text...............</small> <br>
+    <big>It is big text........................</big>
+</pre>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <p>It is Normal Text..............!!</p>
+    <samp>This is smaple text related code out...!!</samp>
+</pre>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <p>It is Normal Text..............!!</p>
+    <u>This is sample text related code out...!!</u>
+</pre>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <var>a=10</var> <br>
+    <var>b=20</var> <br>
+    <var>c=a+b</var> <br>
+    <var>document.wrrite(c)</var>
+</pre>
+</body>
+</html>

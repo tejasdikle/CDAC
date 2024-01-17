@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script type='text/javascript'>
+        window.onload = function() 
+        {
+        var bar = document.getElementById("bar"), 
+        fallback = document.getElementById("fallback"), 
+        loaded = 0;
+        var load = function() 
+        {
+        loaded += 10;
+        bar.value = loaded;
+        if(loaded == 100) 
+        {
+        clearInterval(dummyLoad);
+        }
+        };
+        var dummyLoad = setInterval(function() 
+        {
+        load();
+        } ,100);        
+        }
+        </script>
+        <p>
+        <progress id="bar" value="0" max="100"> 
+        <span id="fallback"></span> </progress></p>
+        
+</body>
+</html>

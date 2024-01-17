@@ -1,0 +1,40 @@
+1 Basic HTML:
+1 <!DOCTYPE>  	
+2 <html> 		
+3 <title> 		
+4 <body> 		
+5 <h1> to <h6> 	
+6 <p> 		
+7 <br> 		
+8 <hr> 		
+9 <!--...--> 
+
+Headings in html:
+In html, we are having six heading styles. All the headings are paired tags. Each and every heading will have their own predefined styles.
+
+Syntax:
+<h1>--------------------------</h1>
+<h2>--------------------------</h2>
+<h3>--------------------------</h3>
+<h4>--------------------------</h4>
+<h5>--------------------------</h5>
+<h6>--------------------------</h6>
+
+Out of all heading styles, biggest heading style is h1 and smallest is h6.
+
+Example
+<html>
+<head>
+<title>
+Headings in HTML..!!
+</title>
+</head>
+<body>
+<h1>Welcome to Naresh i Technologies in Header One</h1>
+<h2>Welcome to Naresh i Technologies in Header Two</h2>
+<h3>Welcome to Naresh i Technologies in Header Three</h3>
+<h4>Leader in IT Training in Header Four</h4>
+<h5>Welcome to Naresh i Technologies in Header Five</h5>
+<h6>Welcome to Naresh i Technologies in Header Six</h6>
+</body>
+</html>

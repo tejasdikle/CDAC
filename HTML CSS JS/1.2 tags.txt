@@ -1,0 +1,206 @@
+HTML Comments
+The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
+
+You can use comments to explain your code, which can help you when you edit the source code at a later date. This is especially useful if you have a lot of code. 
+
+In HTML, a comment begins with <!-- And ends with -->. 
+
+Example of a single line comment:
+<!--This is a small comment-->
+
+Example:
+<!-----This comment will not appear in the Web Page---->
+
+Example:
+<html>
+<head>
+<title>
+Welcome to HTML
+</title>
+</head>
+<body>
+<!-- Naresh i Technologies, Leader in IT Training-->
+</body>
+</html>
+
+Parts in HTML Document:
+Generally HTML document has the following 3 parts:
+
+1. Version Information
+2. Head Section 
+3. Body Section
+
+1. HTML version information
+The <!DOCTYPE> declaration must be the very first thing in your HTML doc, before the <html> tag. The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+
+NOTE:
+The <!DOCTYPE> declaration is NOT case sensitive
+
+Example:HTML-4.01
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+Example:HTML-5.0
+<!doctype html>
+
+Head Section:
+It contains general information, meta-information and document type information. The <head> Tag inside Elements should not display in body section of a webpage.
+
+Head Section Tags:
+1. <title>
+2. <link>
+3. <meta> 
+4. <style>
+5. <script>
+
+<title> Tag:
+The <title> tag is required in all HTML documents and it defines the title of the document. It is a paired tag.
+
+Syntax:
+<title>........................ </title>
+
+Example:
+<!doctype html>
+<html>
+<head>
+<title>
+Welcome to Web Page
+</title>
+</head>
+
+<link> Tag:
+It defines a link between a document and an external resource. It is used to link to external style sheets. It is non-paired tag.
+
+Syntax:
+<link> or <link/>
+
+Syntax:
+<link href="PathOfResource" rel="Relation of Resource" type="Type Of Resource"/>
+
+Attributes
+Attribute 		Value 	Description
+href 		URL 	Specifies the location of the linked document
+rel 		alternate	Provides a link to an alternate version of the 							document stylesheet Imports a style sheet
+type		text/type	It is an Optional Attribute
+
+How to Add a Favicon to your Web-Site
+Favicons are also called shortcut icons.It is a graphic image associated with a particular Web page and/or Web site.  To add a favicon to your Web site.The format of the image must be one of PNG (a W3C standard), GIF (Graphic Interchange Format) , or ICO. The format for the  image you have chosen must be 16x16 pixels or 32x32 pixels. 
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="html5.png" type="image/ico" href="icon">
+</head>
+<body>
+Welcome to FavIcons..!!
+</body>
+</html>
+
+Meta Info
+Tag 		Description
+<head> 		Defines information about the document
+<meta> 		Defines metadata about an HTML document
+
+<meta> Tag:
+It provides metadata about the HTML document. Metadata will not be displayed on the page, but It will be machine parsable. Meta elements are typically used to specify page:
+
+1. meta keywords
+2. meta description
+3. meta author
+4. meta title
+5. meta charset
+6. meta viewport
+
+1. meta keywords: Define keywords for search engines:
+
+Syntax:
+<meta name="keywords" content="required list of keywords">
+
+Example:
+<meta name="keywords"  content="python beginner, beginner python tutorial, python online tutorial, python source code"/>
+
+Example:
+<meta name="keywords" lang="en-IN" content="live cricket scores, cricket, india cricket, live cricket news, yahoo cricket, australia cricket, england cricket"/>
+
+2. meta description: Define a description of your web page
+
+Syntax:
+<meta name="description" content="required Page Description">
+
+Example:
+<meta name="description"  content="A online beginner java tutorial website covering basics of programming along with java source code." />
+
+Example:
+<meta name="description"  content="Check out live cricket scores, cricket news headlines, cricket schedules &amp; results and more from Yahoo!"/>
+
+3. meta author: Define the author of a page:
+
+Syntax:
+<meta name="author" content="name of the author">
+
+Example:
+<meta name="author"  content="kssubbaraj" />
+
+4. meta title: Define the title of the meta content.
+
+Syntax:
+<meta name="title" content="required meta title">
+
+Example:
+<meta name="title" content="Welcome to NareshIT - Hyderabad. Register Now for New Batches" />
+
+5. meta charset: 
+Character encoding tells browsers and validators what set of characters to use when rendering web pages. Unicode Transformation Format-8. It is a universal encoding that will support most of the character like greece, hebrew, japanese, etc
+
+What is Unicode?
+Unicode provides a unique number for every character,
+no matter what the platform,
+no matter what the program,
+no matter what the language.
+
+Syntax: HTML 4.0
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+Syntax:HTML5.0
+<meta charset="UTF-8" />
+
+Example:
+<!doctype html>
+<html lang="en-IN">
+<head>
+<title>
+Working With Unicode
+</title>
+<meta charset="utf-8">
+</head>
+<body>
+Any Language...!!
+</body>
+</html>
+
+6. meta viewport: HTML5 introduced a method to let web designers take control over the viewport. Setting the viewport to make your website look good on all devices.
+
+Syntax:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style> Element
+The <style> tag is used to define style information for an HTML document. It is a paired tag.
+
+Syntax:
+<style> ........................ </style>
+
+Example:
+<head>
+<style type="text/css">
+body 
+{
+background-color:yellow;
+}
+</style>
+</head>
+
+The HTML <script> Element
+The <script> tag is used to define a client-side script, such as a JavaScript. It is a paired tag.
+
+Syntax:
+<script> ........................ </script>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--when we can provide path of video clip ,this clip present in our folder-->
+    <video src="TATA_DOC.mp4" width='200px' heght="200px" controls="controls" id="vid"></video>
+    <div>
+        <button onclick="document.getElementById('vid').play()">PlayVideo</button>
+        <button onclick="document.getElementById('vid').pause()">PauseVideo</button>
+        <button onclick="document.getElementById('vid').volume+=0.1">iVolume</button>
+        <button onclick="document.getElementById('vid').volume-=0.1">dVolume</button>
+    </div>
+</body>
+</html>

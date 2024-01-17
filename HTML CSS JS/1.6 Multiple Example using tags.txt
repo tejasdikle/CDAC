@@ -1,0 +1,152 @@
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html page</title>    
+</head>
+<body>
+    <p align="justify">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+    <p align="center">The HyperText Markup Language </p>
+    <p align="left">The HyperText Markup Language </p>
+    <p align="right">The HyperText Markup Language </p>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+    HTML <br>
+    CSS <br>
+    JAVASCRIPT
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>    HTML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JAVASCRIPT
+</body>
+</html>
+
+&nbsp; (NonBreakingSpace) It is a special Character or Entity. It is not a tag................!!
+<html> ==>Tag
+& ==>Entity
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-HYDERABAD..!!</title>
+</head>
+<body>
+    <hr color="#FF00FF" size="2px" width="100px" align="left">
+    HTML
+    <hr color="#FF0099" size="6px" width="200px" align="right">
+    CSS
+    <hr color="#FF8800" size="12px" width="300px">
+    JavaScript
+    <hr  size="24px" width="400px" noshade="noshade">
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Page..!!</title>
+</head>
+<body>
+    Hello Welcome to<acronym title="It Sowtware"> NiT </acronym> <br/>
+    <br>
+    Hello Welcome to<abbr title="It Sowtware"> NiT </abbr> <br/>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Page</title>
+</head>
+<body>
+    <address>
+        Nashik,<br />
+        Adgaon<br />
+        Nashik 422001 <br/>
+        INDIA.
+     </address>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Page..!!</title>
+</head>
+<body>
+    <b>
+      Nashik,<br />
+        Adgaon<br />
+        Nashik 422001 <br/>
+        INDIA.
+    </b>
+<p></p>
+    <strong>
+       Nashik,<br />
+        Adgaon<br />
+        Nashik 422001 <br/>
+        INDIA.
+    </strong>
+</body>
+</html>
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Page..!!</title>
+</head>
+<body>
+    <b>
+        Nashik,<br />
+        INDIA.
+    </b>
+<blockquote> is Simple and Easy...!!</blockquote>
+<center>
+    Naresh i Technologies,<br />
+    INDIA.
+</center>   
+</body>
+</html>

@@ -1,0 +1,132 @@
+3. body Section
+
+<body> Tag:
+The body section contains all the contents of an HTML document, such as text, hyperlinks, images, Special Character, lists, tables, frames, forms etc. Mostly all the HTML Tags are use this Section. It's most Powerful section. It is a paired tag.
+
+Syntax:
+<body>.......................</body>
+
+Body tag attributes and parameters:
+Attributes		Parameters
+bgcolor		Color Name/ColorCode
+background		image path
+text			Color Name/ColorCode
+
+Note: ColorCode Indicates Hexadecimal color number.
+Syntax:
+	<tag  attribute="parameter">
+Example:
+	<body  bgcolor="blue">
+
+HTML Colors
+W3C Standard 16 Colors:
+Here is the list of W3C Standard 16 Colors names and it is recommended to use them.
+
+Black	Gray	Silver White
+
+Yellow	 	Lime Aqua	Fuchsia
+Red Green		Blue  Purple
+Maroon	          Olive	Navy	Teal
+
+Color Values
+HTML colors are defined using a hexadecimal notation (HEX) for the combination of Red, Green, and Blue color values (RGB). The lowest value that can be given to one of the light sources is 0 (in HEX: 00). The highest value is 255 (in HEX: FF). HEX values are specified as 3 pairs of two-digit numbers, starting with a # sign.
+
+HTML Colors - Hex Codes:
+A hexadecimal is a 6 digit representation of a color. The first two digits(RR) represent a red value, the next two are a green value(GG), and the last are the blue value(BB).
+
+A hexadecimal value can be taken from any graphics software like Adobe Photoshop, Advanced Paint Brush.
+
+Hexadecimal Value - #FFFFFF RGB Color Code - R=255 G=255 B=255
+
+16 Million Different Colors
+The combination of Red, Green, and Blue values from 0 to 255, gives more than 16 million different colors (256 x 256 x 256).
+
+#FF0000-->Red
+#00FF00-->Green
+#0000FF-->Blue
+#000000-->Black
+#FFFFFF -->white
+#FFFF00 -->Yellow
+#FF9900 -->Orange
+------------
+------------
+
+
+Example:
+<html>
+<head>
+<title>
+Hexa color codes
+</title>
+</head>
+<body bgcolor="#00FFDD" text="FFFF00">
+<p>Working with Hexa color codes.</p>
+<p>We can make 16 million colors.</p>
+</body>
+</html>
+
+Entities:
+HTML5 SPECIAL CHARACTERS
+Character entities can be typed as either a numbered entity or a named entity. All character entities begin with an ampersand (&) and end with a semicolon (;). Although every character entity has a numbered version, not everyone has a named version. While a few are listed in the following table to give you an idea of what they look like.
+
+Char 	Number 	Entity 	Description
+© 	&#169; 	&copy; 	COPYRIGHT SIGN
+® 	&#174; 	&reg; 	REGISTERED SIGN
+€ 	&#8364; 	&euro; 	EURO SIGN
+™ 	&#8482; 	&trade; 	TRADEMARK
+← 	&#8592; 	&larr; 	LEFTWARDS ARROW
+↑ 	&#8593; 	&uarr; 	UPWARDS ARROW
+→ 	&#8594; 	&rarr; 	RIGHTWARDS ARROW
+↓ 	&#8595; 	&darr; 	DOWNWARDS ARROW
+♠ 	&#9824; 	&spades;     BLACK SPADE SUIT
+♣ 	&#9827; 	&clubs; 	BLACK CLUB SUIT
+♥ 	&#9829; 	&hearts; 	BLACK HEART SUIT
+♦ 	&#9830; 	&diams; 	BLACK DIAMOND SUIT
+∀ 	&#8704; 	&forall; 	FOR ALL
+∂ 	&#8706; 	&part; 	PARTIAL DIFFERENTIAL
+∃ 	&#8707; 	&exist; 	THERE EXISTS
+∅ 	&#8709; 	&empty; 	EMPTY SETS
+∇ 	&#8711; 	&nabla; 	NABLA
+∈ 	&#8712; 	&isin; 	ELEMENT OF
+Α 	&#913; 	&Alpha; 	GREEK CAPITAL LETTER ALPHA
+Β 	&#914; 	&Beta; 	GREEK CAPITAL LETTER BETA
+Γ 	&#915; 	&Gamma;   GREEK CAPITAL LETTER GAMMA
+
+Using Emojis in HTML:
+Emojis look like images, or icons, but they are not. They are letters (characters) from the UTF-8 (Unicode) character set.
+
+Emoji Characters
+Emojis are also characters from the UTF-8 alphabet:
+    😄 is 128516
+    😍 is 128525
+    💗 is 128151
+
+Some Emoji Symbols in UTF-8
+Emoji 	Value
+🗻	&#128507;
+🗼	&#128508;
+🗽	&#128509;
+🗾	&#128510;
+🗿	&#128511;
+😀	&#128512;
+😁	&#128513;
+😂	&#128514;
+😃	&#128515;
+😄	&#128516;
+😅	&#128517;
+
+Example:
+<!doctype html>
+<html>
+<head>
+<title>
+Basics of HTML
+</title>
+</head>
+<body>
+Welcome to HTML Basics....! &copy; &reg; &trade; <br/>
+&#169; &#8364; &larr; &rarr; &spades; &hearts; &diams; <br/>
+&#128516;&#128515;&#128514;&#128513;&#128512;&#128511;
+&#128510;&#128517;&#128518;
+</body>
+</html>

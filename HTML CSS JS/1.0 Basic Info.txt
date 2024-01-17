@@ -1,0 +1,113 @@
+Basics of Web:
+Define Web?
+Collection of e-resoruces is called web. Sir Tim Berners-Lee invented the World Wide Web in 1989.
+
+Define W3C?
+World Wide Web Consortium, It is an organization to maintain web standards, It was founded by Tim Berners-Lee @ 1994.
+
+Define INTERNET?
+INTERnational NETwork
+OR
+INTERconnected NETwork
+OR
+A network of networks based on the TCP/IP communications protocol.Father of Internet is Dr. Vint Cerf.
+
+Define TCP?
+Transmission Control Protocol
+OR
+It is connectvity between computers in a NETWORK(LAN).That facilitates the exchange of messages.
+
+Define IP?
+Internet Protocol
+OR
+It is connectvity between networks (WAN)
+
+Define Protocol?
+Collection of rules between sender & receiver
+OR
+It is a standard set of rules that allow electronic devices to communicate with each other.
+
+Defime Email/WebMail?
+It is a method of exchanging messages between people using electronic devices.
+OR
+Webmail is a way of sending and receiving emails from a web browser.
+
+Mail communications are classified into the following two types:
+1. Online Mail Communications
+2. Offline Mail Communications
+
+1. Online Mail Communications
+These are popularly known as web mails. First web mail concept developed by an Indian Mr. Sabeer Bhatia, ie. https://www.hotmail.com
+Example:
+Gmail, Yahoomail, Hotmail, AOL Mail, GMX Mail, Outlook.com...........!!
+
+2. Offline Mail Communications
+These are popularly known as POP mails. POP stands for Post Office Protocol. These are special softwares. 
+Example:
+MSOutlookExpress
+MozillaThunderBird
+PoP3 Server.
+
+Define SMTP?
+Simple Mail Transfer Protocol. 
+OR
+Cross mail domain communications
+
+Define MIME?
+Multipurpose Internet Mail Extensions 
+OR
+It is an Internet standard that extends the format of email messages, like pictures, audio, video, and various types of documents and files in the e-mail. It supports UNICODE format Data..!!
+
+Define HTTP/HTTPs
+HTTP:
+Hypertext Transfer Protocol.
+HTTP transmits the data over port number 80.
+No Data Encryption
+Google does not give the preference 
+
+HTTPS:
+Hypertext Transfer Protocol Secure.
+HTTPS transmits the data over port number 443
+SSL that provides the encryption of the data.
+Google gives preferences to the HTTPS
+
+URL
+URN==>  Uniform Resource Name
+URI  ==>  Uniform Resource Identifier
+URL  ==> Uniform Resource Locator
+It is a unique address to identify a person or an organization in the World Wide Web
+
+Example:
+https://www.naresit.com
+http ==> Hyper Text Transfer Protocol (Common Language between Client & Server)
+S ==> SSL ==> Secure Sockets Layer.
+:// ==> Delimiters
+www ==> Default Domain or Sub Domain
+. ==> Period or Embedded Character
+nareshit ==> Primary Level Domain (PLD)
+com ==> Top Level Domain (TLD)
+
+Web Browser
+It is client side light weight software, it takes http request from client to server, It renders(bring) http response from server to client.
+1. Google Chrome
+2. Mozilla Fire Fox Browser
+3. EDGE Browser
+4. OPERA Browser
+5. APPLE SAFARI Browser
+6. Torch
+7. Lion
+
+WebPage:
+It is e-document developed on HTML. It is classified into the following two types:
+1. Static Web Pages
+These are written in languages such as: HTML, CSS, JavaScript,etc.
+
+2. Dynamic Web Pages
+These are written in languages such as:JSP, CGI, AJAX, ASP, PYTHON, etc.
+
+WebSite
+Collection of web pages is called website.
+
+Full Stack
+A full stack means combination of client and server technologies.
+FullStackDeveloper/Ninja Programmer

@@ -1,0 +1,126 @@
+Introduction to HTML:
+It is the standard markup language used to create web pages. 
+
+Features of HTML..
+1.HTML is highly flexible
+2.HTML is user friendly
+3.HTML is an open technology
+4.HTML is consistent and efficient
+5. It takes less time to load the web pages
+
+Limitations of HTML:
+1. It can create only static and plain pages
+2. Need to write lot of code 
+3. Security features are not good in HTML.
+
+
+
+Define a Tag:
+The text placed between left angular brace " < " and right angular brace " > " is called as TAG.
+
+Syntax:	<------>
+Example:	<html>
+
+Tags are classified into two types:
+1. Paired Tags:
+The tags that have both opening and closing tags are called as paired tags.
+
+Examples:
+	<html>-----------------</html>
+	<body>-----------------</body>
+
+Note:The closing tag starts with a forward slash("/")
+
+2. Non-Paired Tags:
+The tags that have only opening tags but no closing tags are called as Non-paired tags.
+Examples:
+<br> or <br/>	<hr> or <hr/>    <img> or <img/>
+
+1. Empty Tags 2. Self-Closed Tags 3. Forcefully Closed Tags
+
+Structure of html:
+<html>
+       <head>
+             <title>---------</title>
+       </head>
+       <body>
+            ----------
+            ----------
+       </body>
+</html>
+
+HTML Elements/Tags
+An element consists of three basic parts: 
+1. Opening tag
+2. Element's content
+3. Closing tag.
+
+Essential HTML Tags
+There are four sets of HTML tags that form the basic structure needed for every HTML file:
+
+1 <html></html>
+2 <head></head>
+3 <title></title>
+4 <body></body>
+
+Definition - <html> </html>
+This basically defines the document as web page. All other tags must fall between the html tags.
+
+Header - <head> </head>
+The header contains information about the document that will not appear on the actual page, such as the title of the document.
+
+Title - <title> </title>
+The title tag defines the title that will appear in the title bar of your web browser. The title must appear between the head tags.
+
+Body - <body> </body>
+The body tags contain all the information and other visible content on the page. All your images, links and plain text must go between the <body> and </body> tags.
+
+HTML Tags
+HTML tags are element names surrounded by angle brackets:
+
+Syntax:
+<tagname>content goes here...</tagname>
+
+NOTE: The start tag is also called the opening tag, and the end tag the closing tag.
+
+HTML editors
+There are many software packages available to develop HTML. The software packages can be grouped into two main categories:
+
+1 text-based (or code-based) Editors
+2 WYSIWYG (what you see is what you get) Editors
+
+1 text-based (or code-based) Editors
+You can create web pages with a basic text editor like Windows Notepad, Unix VI, Linux ViM etc..!!
+VI ==> VIsual Editor
+ViM ==> Visually Improved Editor
+
+2 WYSIWYG (what you see is what you get) Editors:
+There are several popular WYSIWYG editors available:
+1 Macromedia Dreamweaver
+2 Microsoft FrontPage
+3 Adobe Go Live
+4 WebStorm
+5 PyCharm
+6 SublimeText
+7 Brackets
+8 Edit++, Notepad++
+9 ATOM
+10 Visual Studio Code
+
+How to Create a WebPage?
+Step1: Launch any Text Editor or IDE 
+Step2: Write Required HTML source code 
+Step3: Save the file with .htm or .html extension
+Step4:Right click on the saved file, open with any Web Browser or Double Click on the saved file.
+
+Example:
+<html>
+<head>
+<title>
+My First Page
+</title>
+</head>
+<body>
+Welcome to HTML World.!!
+</body>
+</html>

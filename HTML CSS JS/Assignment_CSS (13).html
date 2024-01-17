@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+        <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+        <span id="status"></span>
+        <h1 id="finalMessage"></h1>
+        
+        <script type="text/javascript" language="javascript">
+        function progressBarSim(al) 
+        {
+        var bar = document.getElementById('progressBar');
+        var status = document.getElementById('status');
+        status.innerHTML = al+"%";
+        bar.value = al;
+        al++;
+        var sim = setTimeout("progressBarSim("+al+")",10);
+        if(al == 100)
+        {
+        status.innerHTML = "100%";
+        bar.value = 100;
+        clearTimeout(sim);
+        var finalMessage = document.getElementById('finalMessage');
+        finalMessage.innerHTML = "Process is completed Successfully";
+        }
+        }
+        var amountLoaded = 0;
+        progressBarSim(amountLoaded);
+        </script>
+        
+    
+</body>
+</html>
