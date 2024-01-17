@@ -1,0 +1,46 @@
+Home index page html
+
+
+
+<div class="container text-center mt-5">
+    <h1 class="display-4">
+        <a class="btn btn-primary btn-lg" asp-controller="TblEmployees" asp-action="Create">Add Employee</a>
+    </h1>
+</div>
+
+<div class="container text-center mt-4">
+    <h1 class="display-4">
+        <a class="btn btn-info btn-lg" asp-controller="TblEmployees" asp-action="Index">Show Employee</a>
+    </h1>
+</div>
+
+
+=========================================
+
+        [Key]
+        [Display(Name = "Employee Number")]
+        public int EmpNo { get; set; }
+
+        [DataType(DataType.Text)]
+        [Required(ErrorMessage = "Please enter name")]
+        [StringLength(10, ErrorMessage = "The {0} value cannot exceed {1} characters. ")]
+        public string Name { get; set; }
+
+        //[Range(1000, 500000, ErrorMessage = "Please enter values between 1000-500000")]
+        //[MaxLength(6), MinLength(4)]
+        [Display(Name = "Basic Salary")]
+
+
+=============================================================================
+
+  public int EmployeeId { get; set; }
+
+  [Required (ErrorMessage="Name is required")]
+  public string EmployeeName { get; set; } = null!;
+
+  [Required(ErrorMessage = "City is required")]
+  public string EmployeeCity { get; set; } = null!;
+
+  [DataType(DataType.Date)]
+  //[Range(typeof(DateOnly),"2000-01-01","2023-12-31",ErrorMessage ="Date must be in range")]
+  public DateTime EmployeeDob { get; set; }

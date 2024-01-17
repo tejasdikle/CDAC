@@ -1,0 +1,75 @@
+step 1 ==>
+          create MVC Project
+
+step 2 ==>
+	Add DataBase and Add Table under DataBAse
+
+step 3 ==>
+	Create Stored Procedure --> Add all 4 steps create,Update,details,delete
+
+step 4 ==>
+	Tools-->NUGet Package Manager --> Manager NuGet -->sql -->search karne
+
+step 5 ==>
+	passwordmainFile from github -->EMS2 -->EmployeeManagementSystem.sln
+
+step 6 ==>
+	Copy all files of Model(Github file)--> To our project Model
+
+step 7 ==>
+	Change the project Name from files under Model --> Give our project Name
+
+step 8 ==>
+	Model --> Connection.cs --> catalog name change karne (Give your DataBase Name)
+
+Step 9 ==>
+	Copy file of EmployeeController(GitHub) --> To our controller
+	
+step 10 ==>
+	Create view page for all Method(GetAllEmployee,AddEmployee,Details,Update,Delete) frpm Employee Controller
+	
+	GetAllEmployee --> List
+	AddEmployee -->  create
+	Details -->  Details
+	Update --> edit
+	Delete --> Delete
+
+step 10.a ==>
+	Programme.cs --> Controller = Employee   and  Action=GetAllEmployee --> values provide karne
+
+step 11 ==>
+	View --> GetAllEmployee --> change all html Actions --> Edit = update karne --> Remove the comment and make primary key in new 
+
+step 12 ==>
+	View --> AddEmployee --> scrolldown karne --> asp-action = "GetAllEmployee"> show all Employee  --> write karne
+	copy Action for all views 
+
+step 13 ==>
+	View --> GetAllEmployee --> give action "AddEmployee"  in place of "create"
+
+step 14 ==>
+	from gitHub file --> View --> AddEmployee -->
+		
+		<div class="form-group">
+  @*   <label type="hidden"  asp-for="EmployeeId" class="control-label"></label> *@
+    <input type="hidden" asp-for="EmployeeId" class="form-control" />
+
+     --> Last 2 line copy karne --> And paste it in our main in Same Location 
+
+step 15 ==>
+	From gitHub file --> GetAllEmployee -->
+	
+	@{
+    Object? msg = TempData["msg"];
+    String str = Convert.ToString(msg);
+    <h4>@str</h4>
+}
+
+        ---> copy karne --> paste it in our main file in same location
+
+
+	
+	
+	
+
+

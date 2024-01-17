@@ -1,0 +1,54 @@
+CREATE TABLE [dbo].[tbl_books] (
+    [BookID]     INT             IDENTITY (1, 1) NOT NULL,
+    [BookName]   VARCHAR (50)    NOT NULL,
+    [BookAuthor] VARCHAR (50)    NOT NULL,
+    [BookPrice]  DECIMAL (18, 2) NOT NULL,
+    PRIMARY KEY CLUSTERED ([BookID] ASC)
+);
+
+=====================================================
+
+CREATE PROCEDURE [dbo].[UpdateBook]
+	@BookID int,
+	@BookName varchar(50),
+	@BookAuthor varchar(50),
+	@BookPrice decimal(18,2)
+
+AS
+BEGIN
+	UPDATE tbl_books SET BookName=@BookName, BookAuthor=@BookAuthor, BookPrice=@BookPrice WHERE BookID=@BookID;
+END
+
+
+===============================
+
+
+CREATE PROCEDURE [dbo].[GetAllBooks]
+	
+AS
+BEGIN
+	SELECT * FROM tbl_books;
+END
+
+
+======================================
+
+
+CREATE PROCEDURE [dbo].[DeleteBook]
+	@BookID int
+AS
+BEGIN
+	DELETE FROM tbl_books WHERE BookID=@BookID;
+	END
+
+
+=================================
+
+CREATE PROCEDURE [dbo].[AddBook]
+	@BookName varchar(50),
+	@BookAuthor varchar(50),
+	@BookPrice decimal(18,2)
+AS
+BEGIN
+	INSERT INTO tbl_books VALUES(@BookName,@BookAuthor,@BookPrice);
+END

@@ -1,0 +1,55 @@
+CREATE PROCEDURE [dbo].[AddEmployee]
+	@Name varchar(50),
+	@City  varchar(50),
+	@Address varchar(50)
+AS
+BEGIN
+	INSERT INTO tbl_Employee VALUES(@Name,@City,@Address);
+END
+
+
+
+
+
+
+==================================================
+
+
+CREATE PROCEDURE [dbo].[UpdateEmployee]
+	@EmployeeId int,
+	@Name varchar(50),
+	@City varchar(50),
+	@Address varchar(50)
+
+AS
+BEGIN
+	UPDATE tbl_Employee SET Name=@Name, City=@City, Address=@Address WHERE EmployeeId=@EmployeeId;
+END
+
+
+
+
+==================================================
+
+
+CREATE PROCEDURE [dbo].[GetAllEmployees]
+	
+AS
+BEGIN
+	SELECT * FROM tbl_Employee;
+END
+
+
+
+==================================================
+
+
+
+CREATE PROCEDURE [dbo].[DeleteEmployee]
+	@EmployeeId int
+AS
+BEGIN
+	DELETE FROM tbl_Employee WHERE EmployeeId=@EmployeeId;
+	END
+
+
