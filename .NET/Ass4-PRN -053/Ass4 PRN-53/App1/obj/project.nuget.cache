@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JAdJu3Ynv2+AavPutGqvic5Y1MdG9LN2PBhmFXjJ3cSkL1zOqdPoCAJN+iA2eMukMCO0VU5qeIp++6cudbKp9w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tejas Dhikale\\Desktop\\Assignment 04_052\\Day5\\App1\\App1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tejas Dhikale\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Tejas Dhikale\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Tejas Dhikale\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Tejas Dhikale\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
